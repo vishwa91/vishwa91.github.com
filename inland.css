@@ -20,6 +20,8 @@ h3{font-size:1.9em;text-decoration:none;}
 p,ul{margin:0 0 20px 0;}
 i,em {font-style:italic;}
 b,strong {font-weight:700;}
+#heading{color:#a54569;}
+#heading:hover{color:#333;}
 
 /* Main wrappers */
 #wrapper1240{background-color:#fff;margin:20px auto;width:1240px;}

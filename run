@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# This snippet will help syncing the folder with github, as well as pushing it to the hosting server.
+
+case $1 in
+"sync") git push origin master
+	;;
+"host") rsync -rlvv ./* ee10b035@www.ee.iitm.ac.in:~/public_html/
+	;;
+*)	echo "Usage: ./run sync/host"
+esac

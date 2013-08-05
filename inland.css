@@ -9,7 +9,7 @@ Nivo Slider v2.7.1 by Gilbert Pellegrom - http://nivo.dev7studios.com/
 *{border:0;font:inherit;font-size:100%;margin:0;padding:0;vertical-align:baseline;}
 
 /* HTML elements */
-body{background-color:#f2f2f2;color:#666;font-family:'Droid Sans',Tahoma,Arial,sans-serif;font-size:13px;line-height:1.6em;}
+body{background-color:#f2f2f2;color:#666;font-family:'Droid Sans',Tahoma,Arial,sans-serif;font-size:14px;line-height:1.6em;}
 a{color:#a54569;text-decoration:none;}
 a:hover{color:#333;text-decoration:none;}
 a img{border:none;}
@@ -17,7 +17,9 @@ h1,h2,h3,h4{clear:left;color:#5c5a5a;font-weight:400;margin:0.7em 0;font-family:
 h1{font-size:2.6em;}
 h2{font-size:2.4em;}
 h3{font-size:1.9em;text-decoration:none;}
+h4{font-size:1.2em;text-decoration:none;margin:20px}
 p,ul{margin:0 0 20px 0;}
+li{margin:0px;}
 i,em {font-style:italic;}
 b,strong {font-weight:700;}
 #heading{color:#a54569;}
@@ -39,6 +41,8 @@ b,strong {font-weight:700;}
 #strip{height:80px;background-image:url('../images/strip.jpg');background-color:#e0e0ff;}
 #extended{padding:15px 30px;background-color:#fff;}
 #extended a{text-decoration:none;}
+/* Added IDs for more readibility*/
+#content-box{margin:20px; padding:20px; border:40px;background-color:rgb(240,240,240);}
 
 /* Top links menu */
 #toplinks{background-color:#fafafa;padding:0 30px;}

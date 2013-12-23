@@ -5,7 +5,7 @@
 case $1 in
 "sync") git push private-origin master
 	;;
-"host") rsync -rlvv ./* ee10b035@www.ee.iitm.ac.in:~/public_html/
+"host") scp -r ./* ee10b035@www.ee.iitm.ac.in:~/public_html/
 	;;
 *)	echo "Usage: ./run sync/host"
 esac

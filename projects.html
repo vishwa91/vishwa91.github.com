@@ -95,16 +95,75 @@
               </div-->
               <div class="col-sm-8">
                 <p>
-                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite1" aria-expanded="false" aria-controls="cite1">
+                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite6" aria-expanded="false" aria-controls="cite6">
                       Cite
                   </button>
-                  <div class="collapse" id="cite1">
+                  <div class="collapse" id="cite6">
                     <div class="card card-block small">
 							  @article{saragadam2018krism, <br>
 							  title={KRISM: Krylov Subspace-based Optical Computing of Hyperspectral Images}, <br>
 							  author={Saragadam, Vishwanath and Sankaranarayanan, Aswin}, <br>
 							  journal={Trans. Graphics (to appear)}, <br>
 							  year={2019}
+							}
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <p style="margin: 1em;"></p>
+        </div>
+        <hr>
+		
+		<p style="padding: 1em"></p>
+        <h2>Micro-baseline Structured Light (ICCV)</h2>
+        <p style="padding: 0.25em"></p>
+        <div class="row">
+            <div class="col-sm-4">
+              <figure class="figure text-center">
+                <img src="files/research/msl2019_1.png" class="figure-img rounded img-fluid">
+                <figcaption class="figure-caption text-justify">We propose a fast and accurate SL technique that utilizes narrow (micro) baseline to linearize the SL equation.</figcaption>
+				<br>
+				<img src="files/research/msl2019_2.png" class="figure-img rounded img-fluid">
+                <figcaption class="figure-caption text-justify">Our technique is capable of computing accurate depth map with simple, local least squares technique.</figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-8">
+              <div class="row">
+                <span class="col-12"><p class="text-justify">
+				Structured Light (SL) relies on projecting a known pattern and capturing an image of the scene. By computing the correspondences between projector and camera pixels, SL
+				is capable of highly accurate depth map estimation. Existing SL techniques either require projection of multiple patterns, or rely on complex computing to estimate
+				the depth map, both of which preclude an efficient implementation on mobile systems such as cellphones and drones.
+				<br>
+				<br>
+				
+				Devices with small real estates can only accommodate a narrow (micro) baseline between camera and projector. We observe that such a narrow baseline can be
+				used for linearizing the otherwise non-linear SL equation relating projected pattern and captured image. This leads to a linear equation in two unknowns (albedo and disparity)
+				at each pixel. The resulting equation can then be efficiently solved using a local least-squares approach which requires <b>minimal computational resources</b>, and 
+				needs <b>projection of only a single pattern</b>.
+                </p></span>
+              </div>
+            <div class="row">
+              <div class="col-sm-4">
+                  <span class="fa fa-file-pdf-o fa-2x"></span>  <a href="#">Paper (coming soon)</a>
+              </div>
+              <!--div class="col-sm-2">
+                  <span class="fa fa-file-powerpoint-o fa-2x"></span>  <a href="files/presentations/vishwa_krism2017.pdf">Ppt</a>
+              </div-->
+              <div class="col-sm-8">
+                <p>
+                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite5" aria-expanded="false" aria-controls="cite5">
+                      Cite
+                  </button>
+                  <div class="collapse" id="cite5">
+                    <div class="card card-block small">
+							 @inproceedings{saragadam2019msl, <br>
+							title={Micro-baseline Structured Light}, <br>
+							author={Saragadam, Vishwanath and Wang, Jian and Gupta, Mohit and Nayar, Shree}, <br>
+							booktitle={Intl. Conf. Computer Vision}, <br>
+							year={2019}, 
 							}
                     </div>
                   </div>
@@ -150,10 +209,10 @@
               </div-->
               <div class="col-sm-8">
                 <p>
-                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite1" aria-expanded="false" aria-controls="cite1">
+                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite4" aria-expanded="false" aria-controls="cite4">
                       Cite
                   </button>
-                  <div class="collapse" id="cite1">
+                  <div class="collapse" id="cite4">
                     <div class="card card-block small">
                       @inproceedings{saragadam2019wavelet,<br>
                         title={Wavelet parsing with freeform lensing},<br>
@@ -209,10 +268,10 @@
               </div>
               <div class="col-sm-8">
                 <p>
-                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite1" aria-expanded="false" aria-controls="cite1">
+                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite3" aria-expanded="false" aria-controls="cite3">
                       Cite
                   </button>
-                  <div class="collapse" id="cite1">
+                  <div class="collapse" id="cite3">
                     <div class="card card-block small">
                       @inproceedings{saragadam2017compressive,<br>
                         title={Compressive spectral anomaly detection},<br>
@@ -327,10 +386,10 @@
               </div>
               <div class="col-sm-8">
                 <p>
-                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite3" aria-expanded="false" aria-controls="cite3">
+                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite1" aria-expanded="false" aria-controls="cite1">
                       Cite
                   </button>
-                  <div class="collapse" id="cite3">
+                  <div class="collapse" id="cite1">
                     <div class="card card-block small">
                       @phdthesis{saragadam2014utilizing,<br>
                       title={Utilizing motion sensors for some image processing applications},<br>

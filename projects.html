@@ -57,8 +57,125 @@
     <div class="container">
         <h1>Projects</h1>
         A comprehensive list of major projects I worked on as part of graduate and undergraduate studies.
-		
-		<p style="padding: 1em", id="krism"></p>
+        <p style="padding: 1em", id="programmable"></p>
+        <h2>Material Classification with Spectrally-Programmable Camera (ICCP)</h2>
+        <p style="padding: 0.25em"></p>
+        <div class="row">
+            <div class="col-sm-4">
+              <figure class="figure text-center">
+                <img src="files/research/iccp2020_1.png" class="figure-img rounded img-fluid">
+                <figcaption class="figure-caption text-justify">Material classification with spectrum often requires a linear transformation, which can be optically implemented as spectral filtering</figcaption>
+			          <br>
+			          <img src="files/research/iccp2020_2.png" class="figure-img rounded img-fluid">
+	              <figcaption class="figure-caption text-justify">We build a material classification camera that can perform per-pixel labeling at very high spatial resolution and with as few as two images for binary classification.</figcaption>
+	            </figure>
+	          </div>
+	          <div class="col-sm-8">
+	            <div class="row">
+	              <span class="col-12"><p class="text-justify">
+		              Materials can be reliably classified by measuring their spectrum. Classification of materials in a scene can then by done by capturing spectrum at each pixel, 
+		              resulting in a hyperspectral image, a measurement process that is lengthy and inherently wasteful.
+                <br>
+                <br>
+                  We rely on a simple observation that most spectral classification tasks require computing a linear transform of the spectrum, and the number of such features are very small in number, such as a single measurement for binary classification. We optically compute this linear transformation by building a spectrally-programmable camera,
+            and capturing images with discriminant spectral filters. this leads to capturing a small set of images, and hence efficiently, high frame-rate material classification setup.
+                </p>
+                </span>
+              </div>
+              <div class="row">
+              <div class="col-sm-2">
+                  <span class="fa fa-file-pdf-o fa-2x"></span>  <a href="files/papers/vishwa_iccp2020.pdf">Paper</a>
+              </div>
+              <div class="col-sm-2">
+                  <span class="fa fa-github fa-2x"></span>  <a href="https://github.com/image-science-lab/programmable-spectrometry">Code</a>
+              </div>
+              <!--div class="col-sm-2">
+                  <span class="fa fa-file-powerpoint-o fa-2x"></span>  <a href="files/presentations/vishwa_krism2017.pdf">Ppt</a>
+              </div-->
+              <div class="col-sm-8">
+                <p>
+                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite8" aria-expanded="false" aria-controls="cite8">
+                      Cite
+                  </button>
+                  <div class="collapse" id="cite8">
+                    <div class="card card-block small">
+                      @article{saragadam2020programmable, <br>
+                      title={Programmable Spectrometry: Per-Pixel Material Classification using Learned Spectral Filters}, <br>
+                      author={Saragadam, Vishwanath and Sankaranarayanan, Aswin}, <br>
+                      journal={IEEE Intl. Conf. Computational Photography (ICCP)}, <br>
+                      year={2020}
+                      }
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <p style="margin: 1em;"></p>
+        </div>
+        <hr>
+
+	      <p style="padding: 1em", id="uncertainty"></p>
+        <h2>On Space-Spectrum Uncertainty of Spectrally-Programmable Cameras (Optics Express)</h2>
+        <p style="padding: 0.25em"></p>
+        <div class="row">
+            <div class="col-sm-6">
+              <figure class="figure text-center">
+                <img src="files/research/osa2020_1.png" class="figure-img rounded img-fluid">
+                <figcaption class="figure-caption text-justify">Spectrally-programmable cameras that rely on a spatial light modulator on the rainbow plane, are directly affected by size of the aperture. We show that the 
+                  spectral and spatial resolution are inversely proportional and the product can be lower bounded.
+                </figure>
+	          </div>
+	          <div class="col-sm-6">
+	            <div class="row">
+	              <span class="col-12"><p class="text-justify">
+                  The most efficient way of implementing spectral-programming is to rely on a setup that places a diffraction grating on the image plane, which then generates
+                  the so-called rainbow plan. A spatial light modulator (SLM) can then be placed on this rainbow plane to achieve arbitrary spectral coding.
+                  Such a setup requires a narrow slit to implement sharp spectral filters, but leads to blurry images. A wide aperture, in contrast achieves high
+                  spatial resolution but loses spectral resolution.
+                <br>
+                <br>
+                  In this work, we showed that this space and spectrum trade off can be theoretically be represented as a space-spectrum bandwidth product. We proved that 
+                  the product of standard deviations of spatial and spectral blurs can be lower bounded by <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\lambda}{4\pi\nu_0}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\lambda}{4\pi\nu_0}" title="\frac{\lambda}{4\pi\nu_0}" /></a>
+                  femto square-meters, where <a href="https://www.codecogs.com/eqnedit.php?latex=\nu_0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\nu_0" title="\nu_0" /></a> is the density of
+                  groves in the diffraction grating and <a href="https://www.codecogs.com/eqnedit.php?latex=\lambda" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /></a> is the central
+                  wavelength of light.
+                </p>
+                </span>
+              </div>
+              <div class="row">
+              <div class="col-sm-2">
+                  <span class="fa fa-file-pdf-o fa-2x"></span>  <a href="files/papers/vishwa_osa2020.pdf">Paper</a>
+              </div>
+              <!--div class="col-sm-2">
+                  <span class="fa fa-file-powerpoint-o fa-2x"></span>  <a href="files/presentations/vishwa_krism2017.pdf">Ppt</a>
+              </div-->
+              <div class="col-sm-8">
+                <p>
+                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite7" aria-expanded="false" aria-controls="cite7">
+                      Cite
+                  </button>
+                  <div class="collapse" id="cite7">
+                    <div class="card card-block small">
+                      @article{saragadam2020uncertainty, <br>
+                      title={On Space-Spectrum Uncertainty Analysis for Spectrally-Programmable Cameras}, <br>
+                      author={Saragadam, Vishwanath and Sankaranarayanan, Aswin}, <br>
+                      journal={OSA Optics Express}, <br>
+                      year={2020}
+                      }
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <p style="margin: 1em;"></p>
+        </div>
+        <hr>
+
+	<p style="padding: 1em", id="krism"></p>
         <h2>Optical Singular Value Decomposition for Hyperspectral Imaging <br>(Trans. Graphics)</h2>
         <p style="padding: 0.25em"></p>
         <div class="row">
@@ -66,26 +183,26 @@
               <figure class="figure text-center">
                 <img src="files/research/krism2019_1.png" class="figure-img rounded img-fluid">
                 <figcaption class="figure-caption text-justify">We propose an optical-computing method for capturing low-rank approximation of a scene's hyperspectral image.</figcaption>
-				<br>
-				<img src="files/research/krism2019_2.png" class="figure-img rounded img-fluid">
-                <figcaption class="figure-caption text-justify">Our setup is capable of capturing very high spatial and spectral resolution with 20x fewer measurements than Nyquist rate.</figcaption>
-              </figure>
-            </div>
-            <div class="col-sm-8">
-              <div class="row">
-                <span class="col-12"><p class="text-justify">
-				Hyperspectral cameras capture images across several, narrowband wavelengths, which finds usage in numerous computer vision and material identification 
-				applications. Due to a dense sampling of space and spectrum, the captured hyperspectral image is often very high dimensional. This leads to severe loss in
-				SNR per band, requires very long exposure times and is inherently wasteful.
-				<br>
-				<br>
-				
-				A key observation is that a hyperspectral image of a natural scene has very limited spectral diversity, leading to a concise low-rank representation.
-				We propose an optical imager that directly captures this low-rank subspace. We achieve this by implementing two optical operators -- a spatially-coded
-				spectrometer and a spectrally-coded imager. By alternating between the two, using output of one operator as input to other operator, we capture a low-rank
-				approximation with as few as 10 measurements.
-                </p></span>
-              </div>
+			<br>
+			<img src="files/research/krism2019_2.png" class="figure-img rounded img-fluid">
+	<figcaption class="figure-caption text-justify">Our setup is capable of capturing very high spatial and spectral resolution with 20x fewer measurements than Nyquist rate.</figcaption>
+	</figure>
+	</div>
+	<div class="col-sm-8">
+	<div class="row">
+	<span class="col-12"><p class="text-justify">
+		Hyperspectral cameras capture images across several, narrowband wavelengths, which finds usage in numerous computer vision and material identification 
+		applications. Due to a dense sampling of space and spectrum, the captured hyperspectral image is often very high dimensional. This leads to severe loss in
+		SNR per band, requires very long exposure times and is inherently wasteful.
+		<br>
+		<br>
+		
+		A key observation is that a hyperspectral image of a natural scene has very limited spectral diversity, leading to a concise low-rank representation.
+		We propose an optical imager that directly captures this low-rank subspace. We achieve this by implementing two optical operators -- a spatially-coded
+		spectrometer and a spectrally-coded imager. By alternating between the two, using output of one operator as input to other operator, we capture a low-rank
+		approximation with as few as 10 measurements.
+	</p></span>
+        </div>
             <div class="row">
               <div class="col-sm-2">
                   <span class="fa fa-file-pdf-o fa-2x"></span>  <a href="files/papers/vishwa_krism2018.pdf">Paper</a>
@@ -100,12 +217,12 @@
                   </button>
                   <div class="collapse" id="cite6">
                     <div class="card card-block small">
-							  @article{saragadam2018krism, <br>
-							  title={KRISM: Krylov Subspace-based Optical Computing of Hyperspectral Images}, <br>
-							  author={Saragadam, Vishwanath and Sankaranarayanan, Aswin}, <br>
-							  journal={Trans. Graphics (to appear)}, <br>
-							  year={2019}
-							}
+                      @article{saragadam2018krism, <br>
+                      title={KRISM: Krylov Subspace-based Optical Computing of Hyperspectral Images}, <br>
+                      author={Saragadam, Vishwanath and Sankaranarayanan, Aswin}, <br>
+                      journal={ACM Trans. Graphics}, <br>
+                      year={2019}
+							        }
                     </div>
                   </div>
                 </p>

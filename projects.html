@@ -56,7 +56,111 @@
 
     <div class="container">
         <h1>Projects</h1>
-        A comprehensive list of major projects I worked on as part of graduate and undergraduate studies.
+
+        <p style="padding: 1em", id="sassi"></p>
+        <h2>DeepIR: A Deep Network-based Image Processing Framework for Thermal Images (ICCV Workshop)</h2>
+        <p style="padding: 0.25em"></p>
+        <div class="row">
+            <div class="col-sm-6">
+              <figure class="figure text-center">
+                <img src="files/research/iccvw2021.png" class="figure-img rounded img-fluid">
+                <figcaption class="figure-caption text-justify">We propose a new image processing framework for thermal images that combines the device physics of microbolometer-based thermal sensors and the regularization capabilities of deep network-based image representations.</figcaption>
+	            </figure>
+	          </div>
+	          <div class="col-sm-6">
+	            <div class="row">
+	              <span class="col-12"><p class="text-justify">
+		              Thermal images captured by uncooled microbolometer cameras suffer from non-uniform noise that leads to severe loss in spatial resolution. We identify that thermal images can be factored into a scene-dependent flux that is concisely modeled as outputs of deep networks, and a scene-independent and slowly varying non-uniformity. By capturing multiple images with small camera motion, we are able to estimate the high quality thermal image.
+                </p>
+                </span>
+              </div>
+              <div class="row">
+              <div class="col-sm-2">
+                  <span class="fa fa-file-pdf-o fa-2x"></span>  <a href="https://arxiv.org/pdf/2108.07973.pdf">Paper</a>
+              </div>
+              <div class="col-sm-2">
+                  <span class="fa fa-github fa-2x"></span>  <a href="https://github.com/vishwa91/DeepIR">Code</a>
+              </div>
+              <!--div class="col-sm-2">
+                  <span class="fa fa-file-powerpoint-o fa-2x"></span>  <a href="files/presentations/vishwa_krism2017.pdf">Ppt</a>
+              </div-->
+              <div class="col-sm-8">
+                <p>
+                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite8" aria-expanded="false" aria-controls="cite8">
+                      Cite
+                  </button>
+                  <div class="collapse" id="cite8">
+                    <div class="card card-block small">
+                      @article{saragadam2021thermal,<br>
+                        title={Thermal Image Processing via Physics-Inspired Deep Networks},<br>
+                        author={Vishwanath Saragadam and Akshat Dave and Ashok Veeraraghavan and Richard Baraniuk},<br>
+                        journal={arXiv preprint arXiv:2108.07973},<br>
+                        year={2021}<br>
+                      }
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <p style="margin: 1em;"></p>
+        </div>
+        <hr>
+
+        <p style="padding: 1em", id="sassi"></p>
+        <h2>Super-Pixelated Adaptive Spatio-Spectral Imaging (TPAMI)</h2>
+        <p style="padding: 0.25em"></p>
+        <div class="row">
+            <div class="col-sm-6">
+              <figure class="figure text-center">
+                <img src="files/research/iccp2021.jpg" class="figure-img rounded img-fluid">
+                <figcaption class="figure-caption text-justify">Images of a scene are composed of compact, homogenous regions called super pixels. It hence suffices to sample spectra sparsely at one pixel within each super pixel to obtain a full high spatial and spectral resolution hyperspectral image.</figcaption>
+	            </figure>
+	          </div>
+	          <div class="col-sm-6">
+	            <div class="row">
+	              <span class="col-12"><p class="text-justify">
+		              Capturing spectral information at every spatial pixel in a scene requires cameras that trade off either spatial, spectral, or temporal resolution. We observe that images when oversegmented into super-pixels generate homogenous regions that tend to have similar spectra within the super-pixel. We exploit this observation to build an adaptive hyperspectral camera that consists of an RGB image that acts as a guide and a sptatial-spectral sampler that allows us to sparsely sample spectra of the scene. We first super-pixelate the scene's RGB image and then sample spectra at least at one location within each super-pixel. We then fuse the RGB image with the sparse set of spectral profiles to obtain a high spatial and spectral resolution hyperspectral image at video-rate. Our lab prototype was capable of capturing 600x900 spatial images over 68 bands in 400nm - 700nm at 18 frames per second
+                </p>
+                </span>
+              </div>
+              <div class="row">
+              <div class="col-sm-2">
+                  <span class="fa fa-file-pdf-o fa-2x"></span>  <a href="https://arxiv.org/pdf/2012.14495.pdf">Paper</a>
+              </div>
+              <div class="col-sm-2">
+                  <span class="fa fa-github fa-2x"></span>  <a href="https://github.com/Image-Science-Lab-cmu/SASSI">Code</a>
+              </div>
+              <!--div class="col-sm-2">
+                  <span class="fa fa-file-powerpoint-o fa-2x"></span>  <a href="files/presentations/vishwa_krism2017.pdf">Ppt</a>
+              </div-->
+              <div class="col-sm-8">
+                <p>
+                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite8" aria-expanded="false" aria-controls="cite8">
+                      Cite
+                  </button>
+                  <div class="collapse" id="cite8">
+                    <div class="card card-block small">
+                      @ARTICLE{saragadam2021sassi,<br>
+                        author={Saragadam, Vishwanath and DeZeeuw, Michael and Baraniuk, Richard G. and Veeraraghavan, Ashok and Sankaranarayanan, Aswin C.},<br>
+                        journal={IEEE Trans. Pattern Analysis and Machine Intelligence (TPAMI)}, <br>
+                        title={SASSI — Super-Pixelated Adaptive Spatio-Spectral Imaging}, <br>
+                        year={2021},<br>
+                        volume={43},<br>
+                        number={7},<br>
+                        pages={2233-2244},<br>
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <p style="margin: 1em;"></p>
+        </div>
+        <hr>
+
         <p style="padding: 1em", id="programmable"></p>
         <h2>Material Classification with Spectrally-Programmable Camera (ICCP)</h2>
         <p style="padding: 0.25em"></p>

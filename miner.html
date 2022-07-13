@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Personal website">
+    <meta name="Vishwanath | Art" content="">
+    <!-- link rel="icon" href="../../../../favicon.ico" -->
+
+    <title>Vishwanath | MINER</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Font awesome and academicons -->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="academicons/css/academicons.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    
+    <div class="container text-center" >
+        <h1 class="text-center" style="padding:1em;">MINER: Multiscale Implicit Neural Representation</h1>
+        <h3 class="text-center">Vishwanath Saragadam, Jasper Tan, Guha Balakrishnan,<br> Richard G. Baraniuk, Ashok Veeraraghavan</h3>
+
+        <div class="row text-center" style="padding:1em;">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-2 text-center">
+            <a class="btn btn-primary btn-lg" href="https://arxiv.org/abs/2202.03532" role="button">Paper</a>
+          </div>
+          <div class="col-sm-2 text-center">
+            <a class="btn btn-primary btn-lg" href="https://arxiv.org/abs/2202.03532" role="button">Supplementary</a>
+          </div>
+          <div class="col-sm-2 text-center">
+            <a class="btn btn-primary btn-lg" href="https://arxiv.org/abs/2202.03532" role="button">Video</a>
+          </div>
+          <div class="col-sm-2 text-center">
+            <a class="btn btn-primary btn-lg" href="https://github.com/vishwa91/miner" role="button">Code</a>
+          </div>
+          <div class="col-sm-2"></div>
+        </div>
+
+        <div class="row" style="padding:1em;">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <figure class="figure text-center">
+              <img src="files/miner/teaser.png" class="figure-img rounded img-fluid">
+              <figcaption class="figure-caption text-justify">We present a novel implicit representation framework called MINER that is well suited for tasks such as fitting very high resolution point clouds ovre multiple levels of detail (LoD). This figure demonstrates fitting of the Lucy 3D mesh over five spatial scales. MINER takes less than half an hour to achieve an intersection over union (IoU) of 0.999 when trained over more than a billion 3D points.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+          <h3 class="text-center" style="padding-top:0.5em;">Abstract</h3>
+          <p class="text-justify">
+            We introduce a new neural signal representation designed for the efficient high-resolution representation of large-scale signals. The key innovation in our multiscale implicit neural representation (MINER) is an internal representation via a Laplacian pyramid, which provides a sparse multiscale representation of the signal that captures orthogonal parts of the signal across scales. We leverage the advantages of the Laplacian pyramid by representing small disjoint patches of the pyramid at each scale with a tiny MLP. This enables the capacity of the network to adaptively increase from coarse to fine scales, and only represent parts of the signal with strong signal energy. The parameters of each MLP are optimized from coarse-to-fine scale which results in faster approximations at coarser scales, thereby ultimately an extremely fast training process. We apply MINER to a range of large-scale signal representation tasks, including gigapixel images and very large point clouds, and demonstrate that it requires fewer than 25% of the parameters, 33% of the memory footprint, and 10% of the computation time of competing techniques such as ACORN to reach the same representation error.
+          </p>
+        </div>
+        
+
+        <p style="padding: 0.5rem;"></p>
+        <h3>Image fitting</h3>
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <figure class="figure text-center">
+              <img src="files/miner/pluto.png" class="figure-img rounded img-fluid">
+              <figcaption class="figure-caption text-justify">MINER achieves 40dB for a large image (16MP) at 16x lower resolution in 2s, 8x in 3s, 4x in 9s, 2x in 24s and at full resolution in 50s. In comparison, ACORN achieves 30.8dB in 50s, and KiloNeRF achieves 32.1dB in 50s.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+        
+        <p style="padding: 0.5rem;"></p>
+        <h3 class="text-center">Gigapixel image fitting</h3>
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <figure class="figure text-center">
+              <img src="files/miner/gigapixel.png" class="figure-img rounded img-fluid">
+              <figcaption class="figure-caption text-justify">MINER fits to gigapixel images in 3 hours or less, making it well-suited for extremely large images.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+
+        <p style="padding: 0.5rem;"></p>
+        <h3 class="text-center">Fitting large 3D point clouds</h3>
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <figure class="figure text-center">
+              <img src="files/miner/lucy.png" class="figure-img rounded img-fluid">
+              <figcaption class="figure-caption text-justify">MINER enables training on very large point clouds (1 billion points) in a progressive manner with visually pleasing results in as few as 6 minutes with far fewer parameters (20x) compared to approaches such as ACORN.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+      </div>
+
+        
+    <footer class="footer">
+     <div class="container">
+         <span class="text-muted">&copy; Vishwanath Saragadam 2022</span>
+     </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>

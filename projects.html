@@ -57,8 +57,111 @@
     <div class="container">
         <h1>Projects</h1>
 
-        <p style="padding: 1em", id="sassi"></p>
-        <h2>DeepIR: A Deep Network-based Image Processing Framework for Thermal Images (ICCV Workshop)</h2>
+        <p style="padding: 1em", id="ps2f"></p>
+        <h2>PS<sup>2</sup>F: Polarized Spiral Point Spread Function for Single-Shot 3D Sensing (PAMI 2022)</h2>
+        <p style="padding: 0.25em"></p>
+        <div class="row">
+            <div class="col-sm-6">
+              <figure class="figure text-center">
+                <img src="files/research/iccp2022.png" class="figure-img rounded img-fluid">
+                <figcaption class="figure-caption text-justify">We propose a novel snapshot passive depth imager based on polarization-sensitive point spread function that enables capture of precise depth information at high spatial resolution.</figcaption>
+	            </figure>
+	          </div>
+	          <div class="col-sm-6">
+	            <div class="row">
+	              <span class="col-12"><p class="text-justify">
+                  Passive monocular snapshot depth estimation is crucial in applications such as microscopy, autonomous driving, and robot-assisted surgery. However, existing approaches are aimed primarily at resolving depth of a sparse set of emitters, while several real-world scenes are often modeled as extended linear structures. In this work, we leverage an engineered point spread function (PSF) with polarization sensitivity to obtain high quality depth maps that achieve 50% or better reconstruction accuracy compared to state-of-the-art passive monocular depth estimation approaches.
+                </p>
+                </span>
+              </div>
+            <div class="row">
+              <div class="col-sm-2">
+                  <span class="fa fa-file-pdf-o fa-2x"></span>  <a href="https://arxiv.org/pdf/2207.00945.pdf">Paper</a>
+              </div>
+              <!--div class="col-sm-2">
+                  <span class="fa fa-github fa-2x"></span>  <a href="https://github.com/vishwa91/miner">Code</a>
+              </div-->
+              <div class="col-sm-8">
+                <p>
+                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite12" aria-expanded="false" aria-controls="cite12">
+                      Cite
+                  </button>
+                  <div class="collapse" id="cite12">
+                    <div class="card card-block small">
+                      @article{ghanekar2022ps,<br>
+                        title={PS2F: Polarized Spiral Point Spread Function for Single-Shot 3D Sensing},<br>
+                        author={Ghanekar, Bhargav and Saragadam, Vishwanath and Mehra, Dushyant and Gustavsson, Anna-Karin and Sankaranarayanan, Aswin C and Veeraraghavan, Ashok},<br>
+                        journal={IEEE Trans. Pattern Analysis and Machine Intelligence (TPAMI)},<br>
+                        volume={},<br>
+                        number={},<br>
+                        pages={1-12},<br>
+                        year={2022}
+                      }
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <p style="margin: 1em;"></p>
+        </div>
+        <hr>
+
+        <p style="padding: 1em", id="miner"></p>
+        <h2>MINER: Multiscale Implicit Representations (ECCV 2022)</h2>
+        <p style="padding: 0.25em"></p>
+        <div class="row">
+            <div class="col-sm-6">
+              <figure class="figure text-center">
+                <img src="files/research/eccv2022.png" class="figure-img rounded img-fluid">
+                <figcaption class="figure-caption text-justify">We propose a new signal representation scheme with multiscale implicit neural representations that enables 10x faster training, and 2x fewer parameters than state-of-the-art implicit neural representations.</figcaption>
+	            </figure>
+	          </div>
+	          <div class="col-sm-6">
+              <div class=""row">
+                Check the MINER website <b><a href="https://vishwa91.github.io/miner">here</a></b>
+                <p></p>
+              </div>
+	            <div class="row">
+	              <span class="col-12"><p class="text-justify">
+                  Neural implicit representations enable a continuous mapping from local coordinates to signal of interest with a multilayer perceptron. While there are numerous advantages and applications, existing architectures are not well-suited to rapidly fit very high dimensional signals such as gigapixel images and large point clouds. We overcome the challenges by noting that the Laplacian pyramids of visual signals are multiscale and sparse, enable a concise representation. We leverage the advantages of the Laplacian pyramid by representing small disjoint patches of the pyramid at each scale with a tiny MLP. This enables the capacity of the network to adaptively increase from coarse to fine scales, and only represent parts of the signal with strong signal energy. MINER requires 25% fewer parameters, lower than 33% of GPU memory footprint, and 10% of computational time of competing techniques such as ACORN to reach the same representation accuracy.
+                </p>
+                </span>
+              </div>
+            <div class="row">
+              <div class="col-sm-2">
+                  <span class="fa fa-file-pdf-o fa-2x"></span>  <a href="https://arxiv.org/pdf/2202.03532.pdf">Paper</a>
+              </div>
+              <div class="col-sm-2">
+                  <span class="fa fa-github fa-2x"></span>  <a href="https://github.com/vishwa91/miner">Code</a>
+              </div>
+              <div class="col-sm-8">
+                <p>
+                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite11" aria-expanded="false" aria-controls="cite11">
+                      Cite
+                  </button>
+                  <div class="collapse" id="cite11">
+                    <div class="card card-block small">
+                      @inproceedings{saragadam2022miner,<br>
+                        title={MINER: Multiscale Implicit Neural Representations},<br>
+                        author={Vishwanath Saragadam and Jasper Tan and Guha Balakrishnan and Richard Baraniuk and Ashok Veeraraghavan},<br>
+                        booktitle={European Conf. Computer Vision},<br>
+                        year={2022}
+                      }
+                    </div>
+                  </div>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <p style="margin: 1em;"></p>
+        </div>
+        <hr>
+
+        <p style="padding: 1em", id="deepir"></p>
+        <h2>DeepIR: A Deep Network-based Image Processing Framework for Thermal Images (ICCV Workshop 2021)</h2>
         <p style="padding: 0.25em"></p>
         <div class="row">
             <div class="col-sm-6">
@@ -83,10 +186,10 @@
               </div>
               <div class="col-sm-8">
                 <p>
-                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite8" aria-expanded="false" aria-controls="cite8">
+                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite10" aria-expanded="false" aria-controls="cite10">
                       Cite
                   </button>
-                  <div class="collapse" id="cite8">
+                  <div class="collapse" id="cite10">
                     <div class="card card-block small">
                       @article{saragadam2021thermal,<br>
                         title={Thermal Image Processing via Physics-Inspired Deep Networks},<br>
@@ -106,7 +209,7 @@
         <hr>
 
         <p style="padding: 1em", id="sassi"></p>
-        <h2>Super-Pixelated Adaptive Spatio-Spectral Imaging (TPAMI)</h2>
+        <h2>Super-Pixelated Adaptive Spatio-Spectral Imaging (PAMI 2021)</h2>
         <p style="padding: 0.25em"></p>
         <div class="row">
             <div class="col-sm-6">
@@ -134,10 +237,10 @@
               </div-->
               <div class="col-sm-8">
                 <p>
-                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite8" aria-expanded="false" aria-controls="cite8">
+                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite9" aria-expanded="false" aria-controls="cite9">
                       Cite
                   </button>
-                  <div class="collapse" id="cite8">
+                  <div class="collapse" id="cite9">
                     <div class="card card-block small">
                       @ARTICLE{saragadam2021sassi,<br>
                         author={Saragadam, Vishwanath and DeZeeuw, Michael and Baraniuk, Richard G. and Veeraraghavan, Ashok and Sankaranarayanan, Aswin C.},<br>
@@ -159,7 +262,7 @@
         <hr>
 
         <p style="padding: 1em", id="programmable"></p>
-        <h2>Material Classification with Spectrally-Programmable Camera (ICCP)</h2>
+        <h2>Material Classification with Spectrally-Programmable Camera (ICCP 2020)</h2>
         <p style="padding: 0.25em"></p>
         <div class="row">
             <div class="col-sm-4">
@@ -218,7 +321,7 @@
         <hr>
 
 	      <p style="padding: 1em", id="uncertainty"></p>
-        <h2>On Space-Spectrum Uncertainty of Spectrally-Programmable Cameras (Optics Express)</h2>
+        <h2>On Space-Spectrum Uncertainty of Spectrally-Programmable Cameras (Optics Express 2020)</h2>
         <p style="padding: 0.25em"></p>
         <div class="row">
             <div class="col-sm-6">
@@ -277,7 +380,7 @@
         <hr>
 
 	<p style="padding: 1em", id="krism"></p>
-        <h2>Optical Singular Value Decomposition for Hyperspectral Imaging <br>(Trans. Graphics)</h2>
+        <h2>Optical Singular Value Decomposition for Hyperspectral Imaging <br>(Trans. Graphics 2019)</h2>
         <p style="padding: 0.25em"></p>
         <div class="row">
             <div class="col-sm-4">
@@ -336,7 +439,7 @@
         <hr>
 		
 		    <p style="padding: 1em", id="msl"></p>
-        <h2>Micro-baseline Structured Light (ICCV)</h2>
+        <h2>Micro-baseline Structured Light (ICCV 2019)</h2>
         <p style="padding: 0.25em"></p>
         <div class="row">
             <div class="col-sm-4">
@@ -396,7 +499,7 @@
 		
 
         <p style="padding: 1em", id="wavelet"></p>
-        <h2>Wavelet tree parsing with freeform lensing (ICCP)</h2>
+        <h2>Wavelet tree parsing with freeform lensing (ICCP 2019)</h2>
         <p style="padding: 0.25em"></p>
         <div class="row">
             <div class="col-sm-4">
@@ -453,7 +556,7 @@
 
 
         <p style="padding: 1em", id="anomaly"></p>
-        <h2>Compressive spectral anomaly detection (ICCP)</h2>
+        <h2>Compressive spectral anomaly detection (ICCP 2017)</h2>
         <p style="padding: 0.25em"></p>
         <div class="row">
             <div class="col-sm-4">
@@ -511,7 +614,7 @@
         <hr>
 
         <p style="padding: 1em", id="crosscale"></p>
-        <h2>Cross-scale predictive dictionaries (Trans. Image Processing)</h2>
+        <h2>Cross-scale predictive dictionaries (Trans. Image Processing 2016)</h2>
         <p style="padding: 0.25em"></p>
         <div class="row">
             <div class="col-sm-4">
@@ -563,63 +666,6 @@
                   </div>
                 </p>
               </div>
-
-            </div>
-
-          </div>
-          <p style="margin: 1em;"></p>
-        </div>
-        <hr>
-
-        <p style="padding: 1em"></p>
-        <h2>Utilizing motion sensors for some image processing applications</h2>
-        <p style="padding: 0.25em"></p>
-        <div class="row">
-            <div class="col-sm-4">
-              <figure class="figure text-center">
-                <img src="files/research/btp1.png" class="figure-img rounded img-fluid" style="width: 45%">
-                <img src="files/research/btp2.png" class="figure-img rounded img-fluid" style="width: 45%">
-                <figcaption class="figure-caption text-justify">Estimating depth using motion sensors from a camera. Along with a control over camera
-                settings, a cellphone camera offers inertial motion sensing data which can be used for various image processing tasks.</figcaption>
-              </figure>
-            </div>
-            <div class="col-sm-8">
-              <div class="row">
-                <span class="col-12"><p class="text-justify">Mobiles have become ubiquitous over the past decade, and they offer more data than a traditional DSLR can
-                offer, such as accelerometer, compass and gyroscopes. At the same time, human held mobiles tend to create a blur due to hand shake. <br>
-                <br>
-
-                We proposed some novel applications of such mobile imagery, where we incorporate the sensor information for various image processing
-                tasks such as depth estimation, image deblurring, all-focus image and so on. This work was part of my undergrad thesis where
-                I worked with <a href="http://www.ee.iitm.ac.in/~raju/">Prof. A N Rajagopalan</a><br>
-                <br>
-                  </p></span>
-              </div>
-            <div class="row">
-              <div class="col-sm-2">
-                  <span class="fa fa-file-pdf-o fa-2x"></span>  <a href="files/vishwa_undergrad_thesis.pdf">Thesis</a>
-              </div>
-              <div class="col-sm-2">
-                <span class="fa fa-github fa-2x"></span> <a href="https://github.com/vishwa91/mobile_deconv">Code</a>
-              </div>
-              <div class="col-sm-8">
-                <p>
-                  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#cite1" aria-expanded="false" aria-controls="cite1">
-                      Cite
-                  </button>
-                  <div class="collapse" id="cite1">
-                    <div class="card card-block small">
-                      @phdthesis{saragadam2014utilizing,<br>
-                      title={Utilizing motion sensors for some image processing applications},<br>
-                      author={Saragadam, Vishwanath and Rajagopalan, A. N},<br>
-                      year={2014},<br>
-                      school={Indian Institute of Technology Madras}<br>
-                      }
-                    </div>
-                  </div>
-                </p>
-              </div>
-
 
             </div>
 

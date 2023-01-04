@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Personal website">
+    <meta name="Vishwanath | Wire" content="">
+    <!-- link rel="icon" href="../../../../favicon.ico" -->
+
+    <title>Vishwanath | WIRE</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Font awesome and academicons -->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="academicons/css/academicons.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    
+    <div class="container text-center" >
+        <h1 class="text-center" style="padding:1em;">WIRE: Wavelet Implicit Neural Representations</h1>
+        <h3 class="text-center">Vishwanath Saragadam, Daniel LeJeune, Jasper Tan, Guha Balakrishnan,<br> Ashok Veeraraghavan, Richard G. Baraniuk</h3>
+
+        <div class="row text-center" style="padding:1em;">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-2"></div>
+          <div class="col-sm-2 text-center">
+            <a class="btn btn-primary btn-lg" href="" role="button">Paper</a>
+          </div>
+          <div class="col-sm-2 text-center">
+            <a class="btn btn-primary btn-lg" href="https://github.com/vishwa91/wire" role="button">Code</a>
+          </div>
+          <div class="col-sm-2"></div>
+          <div class="col-sm-2"></div>
+        </div>
+
+        <div class="row" style="padding:1em;">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <figure class="figure text-center">
+              <img src="files/wire/wire1.png" class="figure-img rounded img-fluid">
+              <figcaption class="figure-caption text-justify">We propose a new nonlinearity for implicit neural representations (INRs) based on the continuous complex Gabor wavelet that has high representation capacity for visual signals. (a) visualizes two commonly used nonlinearities: SIREN with sinusoidal nonlinearity and Gaussian nonlinearity, and WIRE that uses a continuous complex Gabor wavelet. WIRE benefits from the frequency compactness of sine, and spatial compactness of a Gaussian nonlinearity. (b) shows error maps for approximating an image with strong edges. SIREN results in global ringing artifacts while Gaussian nonlinearity leads to compact but large error at edges. WIRE produces results with the smallest and most spatially compact error. This enables WIRE to learn representations rapidly and accurately, while being robust to noise and undersampling of data.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+          <h3 class="text-center" style="padding-top:0.5em;">Abstract</h3>
+          <p class="text-justify">
+            Implicit neural representations (INRs) have recently advanced numerous vision-related areas. INR performance depends strongly on the choice of activation function employed in its MLP network. A wide range of nonlinearities have been explored, but, unfortunately, current INRs designed to have high accuracy also suffer from poor robustness (to signal noise, parameter variation, etc.). Inspired by harmonic analysis, we develop a new, highly accurate and robust INR that does not exhibit this tradeoff. <b>Wavelet Implicit neural REpresentation (WIRE)</b> uses as its activation function the <b>complex Gabor wavelet</b> that is well-known to be optimally concentrated in space-frequency and to have excellent biases for representing images. A wide range of experiments (image denoising, image inpainting, super-resolution, computed tomography reconstruction, image overfitting, and novel view synthesis with neural radiance fields) demonstrate that WIRE defines the new state of the art in INR accuracy, training time, and robustness.
+          </p>
+        </div>
+        
+
+        <p style="padding: 0.5rem;"></p>
+        <h3>Denoising</h3>
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <figure class="figure text-center">
+              <img src="files/wire/wire_denoising.png" class="figure-img rounded img-fluid">
+              <figcaption class="figure-caption text-justify">A powerful feature uniquely enabled by WIRE is the robustness to noisy data. Here, we show an image representation with added shot noise, resulting in an input PSNR of 17.6dB. Among the various approaches, WIRE results in the highest PSNR and SSIM of any representation, thereby naturally resulting in denoising.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+        
+        <p style="padding: 0.5rem;"></p>
+        <h3 class="text-center">Multi-image super-resolution</h3>
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <figure class="figure text-center">
+              <img src="files/wire/wire_sr.png" class="figure-img rounded img-fluid">
+              <figcaption class="figure-caption text-justify">INRS are particularly appealing for handling data on an irregular grid, such as images captured with multiple sub-pixel shifts. The figure above shows 4X super resolution with 4 images captured with varying sub-pixel shifts and rotations. We then solved a joint inverse problem where the high resolution image is modeled as the output of an INR. WIRE produces the best reconstruction both quantitatively and qualitatively, implying that WIRE has favorable interpolation properties for visual signals.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+
+        <p style="padding: 0.5rem;"></p>
+        <h3 class="text-center">Computed Tomography (CT) reconstruction</h3>
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <figure class="figure text-center">
+              <img src="files/wire/wire_ct.png" class="figure-img rounded img-fluid">
+              <figcaption class="figure-caption text-justify">Inverse problems with noisy undersampled data require a strong signal prior for robust reconstruction. Here, we show CT-based reconstruction with 100 angles for a 435x326 image ($4\times$ compression) with various approaches. WIRE results in sharp reconstruction, exposing features that are blurry, or with ringing artifacts in reconstructions with other approaches. WIRE is hence a strong signal prior for images, and can solve a large class of inverse problems.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+
+        <p style="padding: 0.5rem;"></p>
+        <h3 class="text-center">Neural radiance fields (NeRF)</h3>
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <figure class="figure text-center">
+                <figure class="figure text-center">
+                    <img src="files/wire/complexgabor.gif" class="figure-img rounded img-fluid">
+                    <figcaption class="figure-caption text-justify"><b>WIRE</b> (24.5dB)</figcaption>
+                </figure>
+                <figure class="figure text-center">
+                    <img src="files/wire/sine.gif" class="figure-img rounded img-fluid">
+                    <figcaption class="figure-caption text-justify"><b>SIREN</b>  (24.4dB)</figcaption>
+                </figure>
+                <figure class="figure text-center">
+                    <img src="files/wire/gauss.gif" class="figure-img rounded img-fluid">
+                    <figcaption class="figure-caption text-justify"><b>Gauss</b>  (22.4dB)</figcaption>
+                </figure>
+                <figure class="figure text-center">
+                    <img src="files/wire/posenc.gif" class="figure-img rounded img-fluid">
+                    <figcaption class="figure-caption text-justify"><b>ReLU + Positional Encoding</b>  (20.9dB)</figcaption>
+                </figure>
+              <figcaption class="figure-caption text-justify">INRs have shown most promise in novel-view synthesis with sparse number of views. Here, we show that WIRE is well-suited for novel-view synthesis, where we use only 25 out of 100 training imagesto train the radiance field. WIRE not only achieves higher accuracy (+0.1dB) with fewer epochs, but captures details that are missed out by other nonlinearities.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+      </div>
+
+        
+    <footer class="footer">
+     <div class="container">
+         <span class="text-muted">&copy; Vishwanath Saragadam 2022</span>
+     </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>
